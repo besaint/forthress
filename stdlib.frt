@@ -276,3 +276,4 @@ include test.frt
 include even.frt
 include prime.frt
 include prime-allot.frt
+include concat.frt

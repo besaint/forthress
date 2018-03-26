@@ -1,0 +1,10 @@
+: concat ( strA strB -> addr )
+    dup count       ( strA strB strBlen)
+    rot dup count   ( strB strBlen strA strAlen )
+    rot over +      ( strB strA strAlen length )
+    heap-alloc      ( strB strA strAlen addr )
+    rot over swap   ( strB strAlen addr addr strA ) 
+    string-copy     ( strB strAlen addr )
+    dup rot + rot   ( addr _addr strB )
+    string-copy     ( addr )
+;
