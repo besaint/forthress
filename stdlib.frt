@@ -277,3 +277,4 @@ include even.frt
 include prime.frt
 include prime-allot.frt
 include concat.frt
+include radical.frt
