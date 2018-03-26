@@ -274,3 +274,4 @@ include fib.frt
 
 include test.frt
 include even.frt
+include prime.frt
